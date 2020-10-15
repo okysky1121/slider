@@ -1,19 +1,19 @@
 html,
 body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   margin: 0px;
   scroll-behavior: smooth;
   overflow: hidden;
 }
 
 #slider {
-  height: 100%;
+  height: 100vh;
   width: 700vw;
 }
 
 .page {
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   float: left;
   transition: all ease 0.5s;
@@ -23,9 +23,9 @@ body {
 
 .arrow {
   position: absolute;
-  height: 10%;
-  width: 5%;
-  top: 50%;
+  height: 10vh;
+  width: 5vw;
+  top: 50vh;
   transform: translateY(-50%);
   opacity: 0.5;
   background-color: gray;
