@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+#slider {
+  height: 100%;
+  width: 700vw;
+}
+
+.page {
+  height: 100%;
+  width: 100vw;
+  float: left;
+  transition: all ease 0.5s;
+  overflow: hidden;
+  opacity: 0.3;
+}
+
+.arrow {
+  position: absolute;
+  height: 10%;
+  width: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  background-color: gray;
+}
+
+#left {
+  left: 0px;
+}
+
+#right {
+  right: 0px;
+}
