@@ -12,7 +12,7 @@ window.addEventListener("load", function (_) {
   });
   right.addEventListener("click", function (ev) {
     const page = pages[now++];
-    if (now === pages.length - 1) --now;
+    if (now === pages.length) return now--;
     page.style.setProperty("width", "0px");
   });
 });
