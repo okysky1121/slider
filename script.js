@@ -1,6 +1,6 @@
-window.addEventListener("load", function (_) {
+window.addEventListener("load", function () {
   function sleep(ms) {
-    return new Promise(function (resolve, reject) {
+    return new Promise(function (resolve) {
       setTimeout(resolve, ms);
     });
   }
@@ -10,11 +10,11 @@ window.addEventListener("load", function (_) {
     document.querySelector("#left"),
     document.querySelector("#right"),
   ];
-  left.addEventListener("click", function (_ev) {
+  left.addEventListener("click", function () {
     const page = pages[--now < 0 ? ++now : now];
     page.style.setProperty("width", "100vw");
   });
-  right.addEventListener("click", function (_ev) {
+  right.addEventListener("click", function () {
     const page = pages[now++];
     if (now === pages.length) return now--;
     page.style.setProperty("width", "0px");
